@@ -1,0 +1,4 @@
+<div class="centered">
+  <app-form-card (onFormSubmit)="handleFormSubmit($event)" [formFields]="loginFields" [formGroup]="loginFormGroup"
+    [formData]="authService.loginResponse | async" formTitle="login" [formActions]="loginActions"></app-form-card>
+</div>

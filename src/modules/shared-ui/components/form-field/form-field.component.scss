@@ -1,0 +1,15 @@
+@import '../../../../assets/variables';
+
+.form {
+  &__field {
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+      height: 35px;
+      border: 1px solid $primary-text;
+      border-radius: 5px;
+    }
+  }
+}

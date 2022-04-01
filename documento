@@ -1,0 +1,4 @@
+The approach for doing this test in framework choice is Angular, the reasons are various but the one I consider the best is the flexebility and speed of coding that can be achieve by using this framework.
+The amount taken to made this development it took about 7-8 hours
+The main difficulty for this challenge was the way to handle JWT tokens without using a httpOnly cookie, so it needs a little bit more of creativity to do it this way, the choice made was to use localstorage as store for the token and a flag to know wheater the user is logged in or not.
+Among others difficulties but with lesser importance was not having the control over the api and being forced to work under the models provided by the api, other than that I didnt found any other problems.

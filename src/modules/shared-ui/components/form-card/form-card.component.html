@@ -1,0 +1,10 @@
+<div [formGroup]="formGroup" class="form__card --fadeIn">
+  <h3 class="form__title">{{ formTitle }}</h3>
+  <app-form-field [control]="getFormControl(item)" *ngFor="let item of formFields" [item]="item"></app-form-field>
+  <div class="form__footer">
+    <button *ngFor="let item of formActions" [class]="item.class" [type]="item.type"
+      (click)="handleAction($event, item.type, item.action)">{{ item.label }}</button>
+  </div>
+  <span [class]="formData!.error ? 'error-message' : 'success-message'" *ngIf="formData!.error || formData!.message">{{
+    formData!.message }}</span>
+</div>

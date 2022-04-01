@@ -1,0 +1,15 @@
+@import '../../../../assets/variables';
+
+.user {
+  &__card {
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+    padding: .5rem;
+    background-color: $icons-color;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

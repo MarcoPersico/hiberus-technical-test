@@ -1,0 +1,8 @@
+<div class="form__field">
+  <label [for]="item.name">{{ item.label }}</label>
+  <input [formControl]="control" class="form__field__input" [id]="item.name" [type]="item.type" [name]="item.name">
+  <span class="error-message" *ngIf="control.errors?.required && control.dirty && !control.valid">field is
+    requierd</span>
+  <span class="error-message" *ngIf="control.errors?.email && control.touched && !control.valid">invalid
+    format</span>
+</div>

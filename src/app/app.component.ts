@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'src/domain/data-access/auth.service';
+import { UserService } from 'src/domain/data-access/user.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hiberus-technical-test';
+
+  constructor(
+    public authService: AuthService,
+    public usersService: UserService,
+  ) {}
 }
